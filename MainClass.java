@@ -7,10 +7,10 @@ public class MainClass {
 
 	public static void validFirstName() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter Last Name : ");
+		System.out.print("Enter fisrt Name : ");
 		String firstName = sc.nextLine();
 		if(Pattern.matches("^[A-Z][a-z]{2,}$", firstName))
-			System.out.println("Valid fisrt name ");
+			System.out.println("Valid first name ");
 		else    
 			System.out.println("Invalid first name ");
 	}
