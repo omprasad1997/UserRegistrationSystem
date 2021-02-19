@@ -5,17 +5,17 @@ import java.util.regex.Pattern;
 
 public class MainClass {
 
-	public static void validPhoneNumber() {
+	public static void validPassword() {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter phone number : ");
-		String phoneNumber = sc.nextLine();
-		if(Pattern.matches("^([0-9]{2})[\\s]([0-9]{10})$", phoneNumber))
-			System.out.println("Valid phone number ");
+		System.out.print("Enter password : ");
+		String password = sc.nextLine();
+		if(Pattern.matches("^((.+){8,})$", password))
+			System.out.println("Valid password ");
 		else    
-			System.out.println("Invalid phone number ");
+			System.out.println("Invalid password ");
 	}
 	public static void main(String[] args) {
-		validPhoneNumber();
+		validPassword();
 
 	}
 
