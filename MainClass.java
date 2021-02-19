@@ -9,7 +9,7 @@ public class MainClass {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter Last Name : ");
 		String lastName = sc.nextLine();
-		if(Pattern.matches("^[A-Z][a-z]{2,}$", firstName))
+		if(Pattern.matches("^[A-Z][a-z]{2,}$", lastName))
 			System.out.println("Valid last name ");
 		else    
 			System.out.println("Invalid last name ");
