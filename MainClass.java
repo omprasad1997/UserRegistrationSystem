@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class MainClass {
 
-	public static void validFirstName() {
+	public static void validLastName() {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter Last Name : ");
 		String lastName = sc.nextLine();
@@ -15,7 +15,7 @@ public class MainClass {
 			System.out.println("Invalid last name ");
 	}
 	public static void main(String[] args) {
-		validFirstName();
+		validLastName();
 
 	}
 
