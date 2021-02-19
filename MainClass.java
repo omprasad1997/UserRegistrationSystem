@@ -9,7 +9,7 @@ public class MainClass {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter password : ");
 		String password = sc.nextLine();
-		if(Pattern.matches("((.+)(?=.*[A-Z])).{8,}", password))
+		if(Pattern.matches("((.+)(?=.*[A-Z])(?=.*[0-9])).{8,}", password))
 			System.out.println("Valid password ");
 		else    
 			System.out.println("Invalid password ");
